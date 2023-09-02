@@ -61,7 +61,7 @@ export default function Home() {
       project.addEventListener("mousemove", moveProject);
       project.addEventListener("mousemove", moveProjectImg.bind(null, project));
     });
-  }, []);
+  }, [preview, previewImg, projects]);
 
   return (
     <main className={styles.main}>
