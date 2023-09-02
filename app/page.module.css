@@ -1,11 +1,7 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+/* .main {
   padding: 6rem;
   min-height: 100vh;
-}
+} */
 
 .description {
   display: inherit;
@@ -97,7 +93,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
