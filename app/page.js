@@ -4,6 +4,9 @@ import styles from "./page.module.css";
 import { gsap } from "gsap/dist/gsap";
 
 export default function Home() {
+  const projects = document.querySelector(".projects");
+  const preview = document.querySelector(".preview");
+  const previewImg = document.querySelector(".preview-img");
   useEffect(() => {
     if (projects && preview && previewImg) {
       let isInside = false;
@@ -63,7 +66,7 @@ export default function Home() {
         );
       });
     }
-  }, [preview, previewImg, projects]);
+  }, []);
 
   return (
     <main className={styles.main}>
